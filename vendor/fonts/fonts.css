@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'JosefinSans';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./JosefinSans-Regular.woff2") format("woff2"),
+         url("./JosefinSans-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'JosefinSans';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./JosefinSans-Bold.woff2") format("woff2"),
+         url("./JosefinSans-Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: 'Pacifico';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./Pacifico-Regular.woff") format("woff");
+  }

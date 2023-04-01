@@ -1,0 +1,160 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  cursor: url(../images/cursor/clef.cur), auto;
+}
+
+.page {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  margin: 0;
+  background-color: #0a0909;
+  color: #ffffff;
+}
+
+.page_container {
+  min-width: 320px;
+  max-width: 1180px;
+  margin: 0 auto 20px;
+}
+
+.header_list {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.header_list-item a {
+  color: #c8b552;
+  margin-right: 20px;
+}
+
+.header_list-item_title a {
+  text-transform: uppercase;
+  color: #fbd611;
+}
+
+.header_nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0909;
+  max-width: 1180px;
+}
+
+.header__container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.header_img-piano {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header_list-item a:hover {
+  cursor: url(../images/cursor/piano.cur), auto;
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.header_img-piano:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(360deg)
+    brightness(118%) contrast(119%);
+  border: none;
+  cursor: url(../images/cursor/piano.cur), auto;
+}
+
+.button-menu {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.button-menu:hover {
+  cursor: url(../images/cursor/piano.cur), auto;
+  opacity: 0.6;
+}
+
+.img-menu {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50px;
+}
+
+.popup_burger {
+  max-width: 1180px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a0909;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_burger__container {
+  width: 340px;
+  height: 560px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .header_list {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .header_list {
+    display: none;
+  }
+
+  .button-menu,
+  .img-menu {
+    display: block;
+  }
+
+  .header_img-piano {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+
+  .header__container-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .header_nav {
+    height: 50px;
+  }
+}

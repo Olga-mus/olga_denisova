@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../header-nav/header-nav.css">
+    <link rel="stylesheet" href="../popup-munu/popup-menu.css">
+</head>
+
+<body class="page">
+    <div class="page_container">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header_nav">
+                    <div class="header__container-menu">
+                        <button type="button" class="button-menu"><img class="img-menu" src="../images/icon/burger.png"
+                                alt="иконка меню" /></button>
+                        <a class="header_link-main" href="../index.html"><img class="header_img-piano"
+                                src="../images/icon/header-piano.svg" alt="Главная страница" /></a>
+                    </div>
+                    <ul class="header_list">
+                        <li class="header_list-item header_list-item_title"><a href="../index.html">Главная</a></li>
+
+                        <li class="header_list-item"><a href="../about/index.html">Обо мне</a></li>
+
+                        <li class="header_list-item"><a href="../create/index.html">Творческие работы</a></li>
+
+                        <li class="header_list-item"> <a href="../services/index.html">Услуги</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="services">
+            <section class="services__education">
+                <h2 class="services__title">Услуги</h2>
+                <div class="services__description">
+                    <div class="services__card">
+                        <ul class="services__list">
+                            <li>Обучение игре на&nbsp;фортепиано, синтезаторе</li>
+                            <li>Подбор аккомпанемента к&nbsp;вашим любимым мелодиям</li>
+                            <li>Помощь в&nbsp;записи ваших сочинений
+                                нотами и&nbsp;в&nbsp;аудио формате</li>
+                            <li>Подбор мелодий по&nbsp;слуху</li>
+                            <li>Обучение сольфеджио, теории музыки
+                                с&nbsp;нуля до&nbsp;продвинутого уровня</li>
+                            <li>Помощь в&nbsp;написании докладов и&nbsp;курсовых работ</li>
+                            <li>Подготовка к&nbsp;поступлению в&nbsp;музыкальные учебные заведения: музыкальную школу,
+                                колледж, ВУЗ</li>
+                        </ul>
+                    </div>
+                    <img class="services__img-gif" src="../images/gif/animal-piano.gif"
+                        alt="зверек играет на синтезаторе">
+                </div>
+                <img class="services__img-photo" src="../images/image/services-main-photo.png"
+                    alt="фотография на концерте">
+            </section>
+            <section class="services-learn">
+                <div class="services-learn__container">
+                    <div class="services-learn__name">
+                        <h4 class="services-learn__subtitle">Не позволяй душе молчать</h4>
+                        <h3 class="services-learn__title">Научись играть на синтезаторе!</h3>
+                    </div>
+                    <img class="services-learn__gif-trumbs" src="../images/gif/thumbs-up.gif" alt="гифка палец вверх">
+                </div>
+                <img class="services-learn__img-play" src="../images/image/services-main-photo-learn.png" alt="">
+            </section>
+
+            <section>
+                <p class="keys__title">Нажимай на эти кнопки клавиатуры и сыграешь известную мелодию</p>
+                <img class="keys__melodia" src="../images/image/services_melodia.png" alt="ноты мелодии">
+                <!-- сюда будем выводить название ноты, клавишу которой мы нажали-->
+                <div class="nowplaying"></div>
+
+                <!-- блок с клавишами -->
+                <div class="keys">
+                    <!-- структура такая: код на клавиатуре → название класса → название ноты → текст подсказки -->
+                    <div data-key="65" class="key key-0" data-note="C">
+                        <span class="hints">A</span>
+                    </div>
+                    <div data-key="87" class="key sharp key-1" data-note="C#">
+                        <span class="hints">W</span>
+                    </div>
+                    <div data-key="83" class="key key-2" data-note="D">
+                        <span class="hints">S</span>
+                    </div>
+                    <div data-key="69" class="key sharp key-3" data-note="D#">
+                        <span class="hints">E</span>
+                    </div>
+                    <div data-key="68" class="key key-4" data-note="E">
+                        <span class="hints">D</span>
+                    </div>
+                    <div data-key="70" class="key key-5" data-note="F">
+                        <span class="hints">F</span>
+                    </div>
+                    <div data-key="84" class="key sharp key-6" data-note="F#">
+                        <span class="hints">T</span>
+                    </div>
+                    <div data-key="71" class="key key-7" data-note="G">
+                        <span class="hints">G</span>
+                    </div>
+                    <div data-key="89" class="key sharp key-8" data-note="G#">
+                        <span class="hints">Y</span>
+                    </div>
+                    <div data-key="72" class="key key-9" data-note="A">
+                        <span class="hints">H</span>
+                    </div>
+                    <div data-key="85" class="key sharp key-10" data-note="A#">
+                        <span class="hints">U</span>
+                    </div>
+                    <div data-key="74" class="key key-11" data-note="B">
+                        <span class="hints">J</span>
+                    </div>
+                    <div data-key="75" class="key key-12" data-note="C">
+                        <span class="hints">K</span>
+                    </div>
+                    <div data-key="79" class="key sharp key-13" data-note="C#">
+                        <span class="hints">O</span>
+                    </div>
+                    <div data-key="76" class="key key-14" data-note="D">
+                        <span class="hints">L</span>
+                    </div>
+                    <div data-key="80" class="key sharp key-15" data-note="D#">
+                        <span class="hints">P</span>
+                    </div>
+                    <div data-key="186" class="key key-16" data-note="E">
+                        <span class="hints">;</span>
+                    </div>
+                </div>
+
+                <!-- аудиофайлы, каждый из них отвечает за свою ноту -->
+                <audio class="play-0" data-key="65" src="../audio/040.mp3"></audio>
+                <audio class="play-1" data-key="87" src="../audio/041.mp3"></audio>
+                <audio class="play-2" data-key="83" src="../audio/042.mp3"></audio>
+                <audio class="play-3" data-key="69" src="../audio/043.mp3"></audio>
+                <audio class="play-4" data-key="68" src="../audio/044.mp3"></audio>
+                <audio class="play-5" data-key="70" src="../audio/045.mp3"></audio>
+                <audio class="play-6" data-key="84" src="../audio/046.mp3"></audio>
+                <audio class="play-7" data-key="71" src="../audio/047.mp3"></audio>
+                <audio class="play-8" data-key="89" src="../audio/048.mp3"></audio>
+                <audio class="play-9" data-key="72" src="../audio/049.mp3"></audio>
+                <audio class="play-10" data-key="85" src="../audio/050.mp3"></audio>
+                <audio class="play-11" data-key="74" src="../audio/051.mp3"></audio>
+                <audio class="play-12" data-key="75" src="../audio/052.mp3"></audio>
+                <audio class="play-13" data-key="79" src="../audio/053.mp3"></audio>
+                <audio class="play-14" data-key="76" src="../audio/054.mp3"></audio>
+                <audio class="play-15" data-key="80" src="../audio/055.mp3"></audio>
+                <audio class="play-16" data-key="186" src="../audio/056.mp3"></audio>
+            </section>
+        </main>
+    </div>
+    <div class="popup hidden">
+        <div class="popup_burger">
+            <div class="popup_burger__container">
+                <ul class="popup_burger__list">
+                    <li> <a href="../index.html">Главная</a></li>
+                    <li><a href="../about/index.html">Обо мне</a></li>
+                    <li> <a href="../create/index.html">Творческие работы</a></li>
+                    <li><a href="./index.html">Услуги</a></li>
+                </ul>
+                <button type="button" class="popup_burger__button-close"></button>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

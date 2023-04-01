@@ -1,0 +1,479 @@
+@import '../vendor/fonts/fonts.css';
+
+.achievement_title {
+  font-family: 'Pacifico', Arial, sans-serif;
+  font-size: 54px;
+  line-height: 1;
+  color: #8a1a15;
+  margin: 130px 0 60px;
+  text-align: center;
+  padding: 0;
+}
+
+.achievement__card {
+  width: 100%;
+  height: 446px;
+  background-color: #d6d6e1;
+  border-radius: 40px;
+  position: relative;
+}
+
+.achievement__container {
+  max-width: 1180px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.achievement__publicitions {
+  background-image: url(../images/icon/publications.svg);
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px auto 0;
+}
+
+.achievement__play {
+  background-image: url(../images/icon/play.svg);
+  width: 84px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px auto 0;
+}
+
+.achievement__awards {
+  background-image: url(../images/icon/awards.svg);
+  width: 80px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px auto 0;
+}
+
+.achievement__subtitle {
+  font-size: 26px;
+  line-height: 1;
+  color: #8a1a15;
+  font-weight: 700;
+  text-align: center;
+}
+
+.achievement__about {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.achievement__button {
+  width: 230px;
+  height: 70px;
+  border-radius: 40px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 400;
+  color: #510d0a;
+  text-transform: uppercase;
+  position: absolute;
+  left: calc(50% - 115px);
+  bottom: 20px;
+  background-image: linear-gradient(
+    to right,
+    #fcea2b,
+    #f39417,
+    #ffbb00,
+    #fcea2b
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  transition: all 0.4s ease-in-out;
+}
+
+.achievement__button:hover {
+  cursor: url(../images/cursor/piano.cur), auto;
+  background-position: 230px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.achievement__button:active {
+  cursor: pointer;
+  background-position: 230px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.achievement__photo {
+  display: block;
+  border-radius: 40px;
+  margin: 80px auto 0;
+}
+
+.publications__title,
+.video__title,
+.awards__title {
+  font-size: 36px;
+  line-height: 1;
+  color: #8a1a15;
+  font-weight: 700;
+  margin: 100px 0 30px;
+  text-align: center;
+}
+
+.publications__all {
+  max-width: 1180px;
+}
+
+.publications__list {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+}
+
+li a {
+  color: #fff;
+}
+
+li a:hover {
+  cursor: url(../images/cursor/piano.cur), auto;
+  opacity: 0.6;
+}
+
+li a:active {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.publications__list li {
+  margin-bottom: 14px;
+}
+
+.publications__container {
+  max-width: 750px;
+  margin: auto;
+}
+
+.video__container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  max-width: 1180px;
+  gap: 20px;
+}
+
+.video__figure {
+  margin: 0;
+  padding: 0;
+  width: 580px;
+  height: 334px;
+}
+
+.video__figure__title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Слайдер: */
+.slider {
+  max-width: 590px;
+  /* Положение элемента устанавливается относительно его исходной позиции: */
+  position: relative;
+  /* Центрируем по горизонтали: */
+  margin: auto;
+  height: 816px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+  /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+  object-fit: cover;
+  width: 100%;
+  height: 816px;
+}
+
+/* Кнопки назад и вперёд: */
+.slider .previous,
+.slider .next {
+  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+  cursor: url(../images/cursor/piano.cur), auto;
+  /* Положение элемента задаётся относительно границ браузера: */
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  /* Оформление самих кнопок: */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  /* Плавное появление фона при наведении курсора: */
+  transition: 0.6s ease;
+  /* Скругление границ: */
+  border-radius: 0 3px 3px 0;
+  /* background-color: #fcea2b; */
+  background-image: linear-gradient(
+    to right,
+    #fcea2b,
+    #f39417,
+    #ffbb00,
+    #fcea2b
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  transition: all 0.4s ease-in-out;
+}
+
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-position: 40px 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.slider .previous:active,
+.slider .next:active {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-position: 40px 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Анимация слайдов: */
+.slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  /* Устанавливаем и изменяем степень прозрачности: */
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .achievement__container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .video__figure {
+    width: 460px;
+    height: 304px;
+  }
+
+  .video__container {
+    max-width: 1020px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .video__container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 74px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slider {
+    max-width: 500px;
+    height: 700px;
+  }
+
+  .slider .item img {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .achievement__button {
+    width: 200px;
+    height: 54px;
+    font-size: 18px;
+    left: calc(50% - 100px);
+  }
+
+  .achievement__about {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .achievement__photo {
+    width: 100%;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .publications__container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .achievement__container {
+    flex-direction: column;
+    max-width: 324px;
+    margin: auto;
+  }
+
+  .achievement_title {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+
+  .publications__title,
+  .video__title,
+  .awards__title {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .publications__container {
+    max-width: 450px;
+  }
+
+  .publications__list {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .slider {
+    max-width: 330px;
+    height: 470px;
+  }
+
+  .slider .item img {
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .publications__container {
+    max-width: 340px;
+  }
+
+  .publications__list {
+    font-size: 12px;
+  }
+
+  .video__figure {
+    width: 340px;
+    height: 220px;
+  }
+
+  .video__figure__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .publications__title,
+  .video__title,
+  .awards__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .achievement_title {
+    font-size: 32px;
+  }
+
+  .achievement__photo {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .publications__container {
+    max-width: 300px;
+  }
+
+  .slider {
+    max-width: 300px;
+    height: 416px;
+  }
+
+  .slider .item img {
+    height: 416px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .achievement__container {
+    max-width: 300px;
+    gap: 10px;
+  }
+
+  .achievement__card {
+    height: 330px;
+  }
+
+  .video__figure {
+    width: 300px;
+    height: 180px;
+  }
+
+  .video__figure__title {
+    font-size: 14px;
+  }
+
+  .publications__title,
+  .video__title,
+  .awards__title {
+    font-size: 24px;
+    margin-top: 46px;
+    margin-bottom: 14px;
+  }
+
+  .video__container {
+    gap: 44px;
+  }
+
+  .achievement__about {
+    font-size: 14px;
+  }
+
+  .achievement__subtitle {
+    font-size: 14px;
+  }
+
+  .achievement__publicitions {
+    width: 70px;
+    height: 70px;
+  }
+
+  .achievement__play {
+    width: 70px;
+    height: 73px;
+  }
+
+  .achievement__awards {
+    width: 70px;
+    height: 78px;
+  }
+
+  .achievement__photo {
+    width: 300px;
+  }
+}

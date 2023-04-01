@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./header-nav/header-nav.css">
+  <link rel="stylesheet" href="./popup-munu/popup-menu.css">
+</head>
+
+<body class="page">
+  <div class="page_container">
+    <header class="header">
+      <div class="header__container">
+        <nav class="header_nav">
+          <div class="header__container-menu">
+            <button type="button" class="button-menu"><img class="img-menu" src="./images/icon/burger.png"
+                alt="иконка меню" /></button>
+            <a class="header_link-main" href="./index.html"><img class="header_img-piano"
+                src="./images/icon/header-piano.svg" alt="Главная страница" /></a>
+          </div>
+          <ul class="header_list">
+            <li class="header_list-item header_list-item_title"><a href="./index.html">Главная</a></li>
+            <li class="header_list-item"><a href="./about/index.html">Обо мне</a></li>
+            <li class="header_list-item"><a href="./create/index.html">Творческие работы</a></li>
+            <li class="header_list-item"><a href="./services/index.html">Услуги</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-main">
+        <img class="header-main__photo" src="./images/image/header-main-photo.png"
+          alt="Фотография автора за синтезатором">
+        <div class="header-main__grad"></div>
+        <h1 class="header-main__title">Привет, я Ольга</h1>
+        <h2 class="header-main__subtitle">Обучаю самому прекрасному языку, влюбляю в&nbsp;музыку
+        </h2>
+        <form style="display: inline" action="#details" method="get">
+          <button class="header-main__text-button" type="submit">Узнать больше</button>
+        </form>
+        <div class="header-main__clue"></div>
+        <div class="header-main__contact">
+          <div class="header-main__icon-phone"></div>
+          <p class="header-main__number">+7-911-679-72-90</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-about-me">
+        <div class="main-about-me__block-break">
+          <div class="main-about-me__sharp"></div>
+          <div class="main-about-me__line"></div>
+          <div class="main-about-me__flat"></div>
+        </div>
+        <div class="main-about-me__photo-me">
+          <img class="main-about-me__photo" src="./images/image/main-photo_organ.png" alt="
+  фотография за органом">
+          <img class="main-about-me__photo" src="./images/image/main-photo_guitar.png" alt="
+  фотография с гитарой">
+        </div>
+        <div class="main-about-me__info" id="details">
+          <div class="main-about-me__text">
+            <ul class="main-about-me__text__list">
+              <li class="main-about-me__item">Вы давно хотели сыграть любимую мелодию и подарить ее своим близким?
+              </li>
+              <li class="main-about-me__item">Любите петь и хотели бы научиться подыгрывать себе на инструменте?</li>
+              <li class="main-about-me__item">Хотите играть в музыкальном коллективе, но не знаете с чего начать?</li>
+              <li class="main-about-me__item main-about-me__item_highlight">Обучение игре на синтезаторе, фортепиано
+              </li>
+              <li class="main-about-me__item main-about-me__item_highlight">Изучение основ музыкальной грамоты с нуля до
+                продвинутого уровня</li>
+            </ul>
+          </div>
+          <img class="main-about-me__piano" src="./images/image/main-about-me_my-photo.png" alt="
+          фотография c синтезатором">
+        </div>
+      </div>
+      <div class="main-dreams">
+        <video style="width: 100%; height: 100%" class="main-dreams__video" autoplay loop>
+          <source src="./video/Piano.mp4" type="video/mp4">
+        </video>
+        <h3 class="main-dreams__text">Мечты сбываются...</h3>
+      </div>
+      <div class="main-about-me__block-break">
+        <div class="main-about-me__sharp"></div>
+        <div class="main-about-me__line"></div>
+        <div class="main-about-me__flat"></div>
+      </div>
+    </main>
+    <footer class="footer-contacts">
+      <h3 class="footer-contacts__title">контакты</h3>
+      <ul class="footer-contacts__list">
+        <li class="footer-contacts__list-items">
+          <a href="https://t.me/ollganum">
+            <div class="footer-contacts__icon_tg"></div>
+          </a>
+          <p><a href="https://t.me/ollganum">@ollganum</a></p>
+        </li>
+        <li class="footer-contacts__list-items">
+          <a href="https://mailto:olganum@gmail.com">
+            <div class="footer-contacts__icon_email"></div>
+          </a>
+          <p><a href="https://mailto:olganum@gmail.com">olganum@gmail.com</a></p>
+        </li>
+        <li class="footer-contacts__list-items">
+          <a href="https://vk.com/id152233530">
+            <div class="footer-contacts__icon_vk"></div>
+          </a>
+          <p><a href="https://vk.com/id152233530">https://vk.com/id152233530</a></p>
+        </li>
+        <li class="footer-contacts__list-items">
+          <div class="footer-contacts__icon_phone"></div>
+          <p>+7-911-679-72-90</p>
+        </li>
+      </ul>
+    </footer>
+    <div class="popup hidden">
+      <div class="popup_burger">
+        <div class="popup_burger__container">
+          <ul class="popup_burger__list">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./about/index.html">Обо мне</a></li>
+            <li><a href="./create/index.html">Творческие работы</a></li>
+            <li><a href="./services/index.html">Услуги</a></li>
+          </ul>
+          <button type="button" class="popup_burger__button-close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
