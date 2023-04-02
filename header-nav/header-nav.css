@@ -103,6 +103,7 @@ a {
 .popup {
   position: fixed;
   top: 50px;
+  z-index: 3;
 }
 
 .popup_burger {
