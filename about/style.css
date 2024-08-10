@@ -1,5 +1,13 @@
 @import '../vendor/fonts/fonts.css';
 
+:root {
+  --color-background: #f7cdcd;
+  --color-menu: #a26767;
+  --color-subtitle: #fcea2b;
+  --color-title: #edf7fc;
+  --color-fone: #edf7fc;
+}
+
 .header_img-piano {
   height: 50px;
   width: 50px;
@@ -38,7 +46,7 @@ a .header_list-item:active {
   font-family: 'Pacifico', Arial, sans-serif;
   font-size: 54px;
   line-height: 1;
-  color: #8a1a15;
+  color: var(--color-subtitle);
   margin: 60px 0;
   text-align: center;
   padding: 0;
@@ -51,7 +59,7 @@ a .header_list-item:active {
 .main-about__info {
   width: 378px;
   height: 400px;
-  background-color: #d6d6e1;
+  background-color: var(--color-subtitle);
   border-radius: 40px;
   display: flex;
   align-items: center;

@@ -35,13 +35,13 @@
   font-size: 64px;
   line-height: 1.25;
   letter-spacing: 0.04em;
-  color: #8a1a15;
+  color: var(--color-subtitle);
   margin: 0;
   position: absolute;
   top: 42px;
   left: 100px;
-  text-shadow: 1px 1px 2px black, 0 0 25px #000000, 0 0 5px #fcea2b;
-  animation: glow 3s ease-in-out infinite alternate;
+  text-shadow: 1px 1px 2px black, 0 0 25px #000000, 0 0 5px #393830;
+  /* animation: glow 3s ease-in-out infinite alternate; */
 }
 
 @keyframes glow {
@@ -75,19 +75,19 @@
   font-size: 22px;
   line-height: 1;
   font-weight: bold;
-  color: #510d0a;
+  color: #14290b;
   position: absolute;
   bottom: 60px;
   left: 100px;
   text-transform: uppercase;
   background-image: linear-gradient(
     to right,
-    #fcea2b,
-    #f39417,
-    #ffbb00,
-    #fcea2b
+    #3a7c4d,
+    #3b7e4d,
+    #2c994b,
+    #38784a
   );
-  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(21, 68, 14, 0.75);
   transition: all 0.4s ease-in-out;
 }
 
@@ -164,7 +164,7 @@
 .main-about-me__line {
   width: 100%;
   height: 18px;
-  border-bottom: 1px solid #8a1a15;
+  border-bottom: 1px solid var(--color-subtitle);
 }
 
 .main-about-me__block-break {
@@ -188,7 +188,7 @@
   width: 380px;
   height: 460px;
   border-radius: 40px;
-  background-color: #d6d6e1;
+  background-color: var(--color-subtitle);
   color: #000;
   font-size: 18px;
   line-height: 1.22;
@@ -229,7 +229,7 @@
   font-family: 'Pacifico', Arial, sans-serif;
   font-size: 30px;
   line-height: 1;
-  color: #8a1a15;
+  color: var(--color-subtitle);
   margin: 20px 0 30px 10px;
 }
 

@@ -4,7 +4,7 @@
   font-family: 'Pacifico', Arial, sans-serif;
   font-size: 54px;
   line-height: 1;
-  color: #8a1a15;
+  color: var(--color-subtitle);
   margin: 130px 0 60px;
   text-align: center;
   padding: 0;
@@ -23,7 +23,7 @@
 .services__card {
   width: 580px;
   height: 352px;
-  background-color: #d6d6e1;
+  background-color: var(--color-subtitle);
   border-radius: 40px;
 }
 
@@ -54,7 +54,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
-  color: #fcea2b;
+  color: var(--color-subtitle);
   margin: 0 0 30px;
   text-align: center;
 }
@@ -63,7 +63,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
-  color: #fcea2b;
+  color: var(--color-subtitle);
   margin: 0;
   text-transform: uppercase;
   text-align: center;

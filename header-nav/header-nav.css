@@ -2,6 +2,23 @@
   outline: 1px solid red;
 } */
 
+:root {
+  --color-background: #f7cdcd;
+  --color-menu: #a26767;
+  --color-subtitle: #fcfced;
+  /* --color-title: #edf7fc; */
+  --color-fone: #cdf7d9;
+  --color-btn: #38784a;
+}
+
+/* :root {
+  --color-background: #000;
+  --color-title: #8a1a15;
+  --color-fone: #edf7fc;
+  --color-name: #2d5e7d;
+  #FCFCED
+} */
+
 body {
   cursor: url(../images/cursor/clef.cur), auto;
 }
@@ -9,7 +26,7 @@ body {
 .page {
   font-family: 'Josefin Sans', Arial, sans-serif;
   margin: 0;
-  background-color: #0a0909;
+  background-color: var(--color-background);
   color: #ffffff;
 }
 
@@ -32,13 +49,13 @@ body {
 }
 
 .header_list-item a {
-  color: #c8b552;
+  color: var(--color-menu);
   margin-right: 20px;
 }
 
 .header_list-item_title a {
   text-transform: uppercase;
-  color: #fbd611;
+  color: var(--color-menu);
 }
 
 .header_nav {
@@ -46,7 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0a0909;
+  background-color: var(--color-background);
   max-width: 1180px;
 }
 
@@ -74,10 +91,11 @@ a {
 }
 
 .header_img-piano:hover {
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(360deg)
-    brightness(118%) contrast(119%);
+  /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(360deg)
+    brightness(118%) contrast(119%); */
   border: none;
   cursor: url(../images/cursor/piano.cur), auto;
+  opacity: 0.6;
 }
 
 .button-menu {

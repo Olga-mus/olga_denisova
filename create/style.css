@@ -4,7 +4,7 @@
   font-family: 'Pacifico', Arial, sans-serif;
   font-size: 54px;
   line-height: 1;
-  color: #8a1a15;
+  color: var(--color-subtitle);
   margin: 130px 0 60px;
   text-align: center;
   padding: 0;
@@ -13,7 +13,7 @@
 .achievement__card {
   width: 100%;
   height: 446px;
-  background-color: #d6d6e1;
+  background-color: var(--color-subtitle);
   border-radius: 40px;
   position: relative;
 }
@@ -55,9 +55,10 @@
 .achievement__subtitle {
   font-size: 26px;
   line-height: 1;
-  color: #8a1a15;
+  color: var(--color-fone);
   font-weight: 700;
   text-align: center;
+  -webkit-text-stroke: 1px #77af7b;
 }
 
 .achievement__about {
@@ -75,19 +76,19 @@
   font-size: 22px;
   line-height: 1;
   font-weight: 400;
-  color: #510d0a;
+  color: #14290b;
   text-transform: uppercase;
   position: absolute;
   left: calc(50% - 115px);
   bottom: 20px;
   background-image: linear-gradient(
     to right,
-    #fcea2b,
-    #f39417,
-    #ffbb00,
-    #fcea2b
+    #3a7c4d,
+    #3b7e4d,
+    #2c994b,
+    #38784a
   );
-  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(21, 68, 14, 0.75);
   transition: all 0.4s ease-in-out;
 }
 
@@ -114,7 +115,7 @@
 .awards__title {
   font-size: 36px;
   line-height: 1;
-  color: #8a1a15;
+  color: var(--color-subtitle);
   font-weight: 700;
   margin: 100px 0 30px;
   text-align: center;
